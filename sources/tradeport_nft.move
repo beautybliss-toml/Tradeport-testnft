@@ -4,15 +4,7 @@ module tradeport_testnft::tradeport_testnft;
 */
 module tradeport_nft::roaring_kitties{
     use std::string::{Self, String};
-    use sui::url::{Self, Url};
     use sui::vec_map::{Self, VecMap};
-
-    public struct NFT has key, store{
-        id: UID,
-        name: String,
-        description: String,
-        url: Url,
-    }
 
     public struct Nft has key, store{
         id: UID,
